@@ -44,3 +44,48 @@
 .nav__container {
   display: none;
 }
+
+/* Media query */
+@media screen and (width >= 1024px) {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    font-size: 2rem;
+  }
+
+  .nav__list {
+    list-style: none;
+  }
+
+  .nav__list-last {
+    border: 2px solid var(--secondary-color);
+    padding: 2px 0;
+    border-radius: 3px;
+  }
+
+  .nav__list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    /* Evito el salto del elemento al hacer hover */
+    border: 2px solid transparent;
+    padding: 2px;
+    /* Añado transición al hacer hover */
+    transition: background-color 1s ease;
+  }
+
+  .nav__list a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 3px;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+}
