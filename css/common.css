@@ -1,0 +1,21 @@
+/* Variables */
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #1cb698;
+  --background-color: #0d264d;
+  --text-color: #ffffff;
+}
+
+/* Establezco tamaño de letra y familia */
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  /* Google font */
+  font-family: "Montserrat", sans-serif;
+  /* me permite deslizar cuando hago click en los links del menu */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+}
