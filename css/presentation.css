@@ -20,7 +20,7 @@
   background-position: center;
   background-size: cover;
   filter: brightness(20%);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .presentation .presentation__content {
@@ -48,7 +48,7 @@
 }
 
 .presentation .presentation__text h1 {
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: var(--text-color);
   font-size: 2rem;
 }

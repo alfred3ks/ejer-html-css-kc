@@ -1,0 +1,40 @@
+.aboutme {
+  width: 100%;
+  padding: 15px 25px;
+}
+
+.aboutme .aboutme__title {
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.aboutme .aboutme__text {
+  text-align: left;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 2.3rem;
+}
+
+@media screen and (width >= 768px) {
+  .aboutme {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .aboutme {
+    width: 80%;
+  }
+  .aboutme .aboutme__title {
+    font-size: 2.2rem;
+  }
+
+  .aboutme .aboutme__text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
