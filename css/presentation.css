@@ -1,0 +1,97 @@
+.presentation {
+  text-align: center;
+  position: relative;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+}
+
+.presentation .presentation__background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../assets/img/fondo-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(20%);
+  opacity: 0.8;
+}
+
+.presentation .presentation__content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation__content .presentation__img {
+  max-width: 180px;
+  padding: 10px;
+}
+
+.presentation__content .presentation__img img {
+  width: 100%;
+  border-radius: 50%;
+  outline: solid 1px var(--secondary-color);
+}
+
+.presentation__text {
+  width: 70%;
+}
+
+.presentation .presentation__text h1 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.presentation .presentation__text p {
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+
+/* Media queries */
+@media screen and (width >= 768px) {
+  .presentation {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .presentation .presentation__background {
+    background-image: url(../assets/img/fondo-desktop.jpg);
+  }
+
+  .presentation .presentation__content {
+    width: 60%;
+    padding: 10px 0;
+  }
+
+  .presentation__content .presentation__img {
+    max-width: 300px;
+  }
+
+  .presentation .presentation__content h1 {
+    font-size: 2.4rem;
+  }
+
+  .presentation .presentation__content p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .presentation .presentation__content {
+    flex-direction: row;
+  }
+  .presentation__text {
+    width: 60%;
+  }
+}

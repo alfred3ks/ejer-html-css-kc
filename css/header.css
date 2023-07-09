@@ -15,7 +15,7 @@
 
 .header__name {
   color: var(--secondary-color);
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -51,6 +51,11 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+
+  .header__name {
+    font-size: 2.4rem;
+  }
+
   .nav__container {
     display: flex;
     align-items: center;
