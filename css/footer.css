@@ -16,7 +16,7 @@
 }
 
 .footer__contact {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
@@ -37,5 +37,11 @@
   .footer {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
   }
 }
