@@ -1,21 +1,27 @@
 .aboutme {
   width: 100%;
-  padding: 15px 25px;
+  min-width: 300px;
+  padding: 10px 15px 0 15px;
 }
 
 .aboutme .aboutme__title {
-  text-align: center;
-  margin: 20px;
-  font-size: 2rem;
+  margin: 20px 0;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-color);
 }
 
 .aboutme .aboutme__text {
+  width: 100%;
   text-align: left;
   font-size: 1.6rem;
   color: var(--text-color);
-  line-height: 2.3rem;
+  line-height: 1.5;
+  margin-bottom: 195px;
+}
+
+.aboutme .aboutme__text p {
+  padding-bottom: 10px;
 }
 
 @media screen and (width >= 768px) {
@@ -28,7 +34,10 @@
 @media screen and (width >= 1024px) {
   .aboutme {
     width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+
   .aboutme .aboutme__title {
     font-size: 2.2rem;
   }
