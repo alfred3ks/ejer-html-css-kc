@@ -1,0 +1,73 @@
+.form {
+  width: 100%;
+  min-width: 300px;
+  padding: 10px 15px 10px 25px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form__image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../assets/img/contact_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.form__title {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.form__container {
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+.form__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.form__input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  background: var(--text-color);
+  border: none;
+  color: rgb(255, 255, 255);
+  color: var(--main-text-color);
+}
+
+.form__element--checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form__element--checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--background-color);
+}
+
+textarea::placeholder {
+  padding: 10px 5px;
+}
