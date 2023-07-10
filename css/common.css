@@ -1,9 +1,10 @@
 /* Variables */
 :root {
-  --primary-color: #030712;
+  --primary-color: #0a192f;
   --secondary-color: #1cb698;
-  --background-color: #0a192f;
+  --background-color: #000000;
   --text-color: #ffffff;
+  --border-color: #ececec;
 }
 
 /* Establezco tamaño de letra y familia */
@@ -14,6 +15,7 @@ html {
   font-family: "Montserrat", sans-serif;
   /* me permite deslizar cuando hago click en los links del menu */
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
 body {

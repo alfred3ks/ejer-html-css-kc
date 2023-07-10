@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="./css/presentation.css">
   <link rel="stylesheet" href="./css/about.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/skills.css">
   <title>Portfolio Web - John Doe</title>
 </head>
 <body>
@@ -56,16 +58,58 @@
     </section>
 
     <!-- About -->
-    <section class="aboutme">
-      <h2 class="aboutme__title">Sobre mí</h2>
-      <div class="aboutme__text">
-        <p>Con una sólida formación en ingeniería informática, en los últimos dos años he podido trabajar con empresas,
-          donde he
-          aplicado mis habilidades en tecnologías como HTML, CSS y JavaScript.</p>
-        <p>Mi enfoque es crear interfaces de usuario atractivas e intuitivas. Me apasiona mantenerme al día con las
-          últimas
-          tendencias en el campo del desarrollo web, y siempre estoy buscando oportunidades para aprender y mejorar mis
-          habilidades.</p>
+    <section class="about" id="about">
+      <div class="about__container">
+        <h2 class="about__title">Sobre mí</h2>
+        <div class="about__text">
+          <p>Con una sólida formación en ingeniería informática, en los últimos dos años he podido
+            trabajar con empresas,
+            donde he
+            aplicado mis habilidades en tecnologías como HTML, CSS y JavaScript.</p>
+          <p>Mi enfoque es crear interfaces de usuario atractivas e intuitivas. Me apasiona mantenerme al día con las
+            últimas
+            tendencias en el campo del desarrollo web, y siempre estoy buscando oportunidades para aprender y mejorar
+            mis
+            habilidades.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="skills__image"></div>
+      <div class="skill__container">
+        <h2 class="skills__title">Skills</h2>
+        <!-- HTML -->
+        <h3 class="skills__tecnology">HTML</h3>
+        <div class="skills__bars">
+          <div class="skills__outside-html">
+            <div class="skills__inside-html"></div>
+          </div>
+          <div class="skills__percentage">
+            <h4>90%</h4>
+          </div>
+        </div>
+        <!-- CSS3 -->
+        <h3 class="skills__tecnology">CSS3</h3>
+        <div class="skills__bars">
+          <div class="skills__outside-css">
+            <div class="skills__inside-css"></div>
+          </div>
+          <div class="skills__percentage">
+            <h4>85%</h4>
+          </div>
+        </div>
+        <!-- JavaScript -->
+        <h3 class="skills__tecnology">JavaScript</h3>
+        <div class="skills__bars">
+          <div class="skills__outside-js">
+            <div class="skills__inside-js"></div>
+          </div>
+          <div class="skills__percentage">
+            <h4>75%</h4>
+          </div>
+        </div>
       </div>
     </section>
   </main>

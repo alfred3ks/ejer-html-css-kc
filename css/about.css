@@ -1,48 +1,56 @@
-.aboutme {
+.about {
   width: 100%;
   min-width: 300px;
-  padding: 10px 15px 0 15px;
+  padding: 20px 15px 20px 25px;
+  background-color: var(--primary-color);
 }
 
-.aboutme .aboutme__title {
+.about__container {
+  width: 100%;
+}
+
+.about .about__title {
   margin: 20px 0;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-color);
 }
 
-.aboutme .aboutme__text {
+.about .about__text {
   width: 100%;
   text-align: left;
   font-size: 1.6rem;
   color: var(--text-color);
   line-height: 1.5;
-  margin-bottom: 15px;
 }
 
-.aboutme .aboutme__text p {
+.about .about__text p {
   padding-bottom: 10px;
 }
 
 @media screen and (width >= 768px) {
-  .aboutme {
+  .about__container {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .aboutme {
-    width: 80%;
-    max-width: 1200px;
+  .about {
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 50px 0;
   }
 
-  .aboutme .aboutme__title {
+  .about__container {
+    width: 80%;
+  }
+
+  .about .about__title {
     font-size: 2.2rem;
   }
 
-  .aboutme .aboutme__text {
+  .about .about__text {
     font-size: 1.8rem;
     line-height: 2.8rem;
   }
