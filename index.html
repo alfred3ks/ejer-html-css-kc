@@ -120,6 +120,69 @@
       <a class="portfolio__button" href="portfolio.html" target="_blank">Portfolio</a>
     </section>
 
+    <!-- Contact Form -->
+    <section>
+      <h2>Contacto</h2>
+      <form action="/" method="post">
+        <!-- Nombre -->
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Nombre" required />
+        </div>
+        <!-- Apellido -->
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido" required />
+        </div>
+        <!-- Teléfono -->
+        <div>
+          <label for="phone">Teléfono</label>
+          <input type="tel" name="phone" id="phone" min="0" pattern="[0-9]{9}" placeholder="Teléfono (666123123)"
+            required />
+        </div>
+        <!-- Github -->
+        <div>
+          <label for="github">Tag Github</label>
+          <input type="text" name="github" id="github" pattern="^@[^/s]" placeholder="@<username>" />
+        </div>
+        <!-- Donde me conocistes -->
+        <div>
+          <label>¿Dónde me conociste?</label>
+          <div>
+            <label for="university">Universidad</label>
+            <input type="radio" name="where" id="university" value="universidad" required checked />
+          </div>
+          <div>
+            <label for="keepcoding">Keepcoding kick-off</label>
+            <input type="radio" name="where" id="keepcoding" value="keepcoding" required />
+          </div>
+          <div>
+            <label for="schooll">Colegio</label>
+            <input type="radio" name="where" id="school" value="school" required />
+          </div>
+          <div>
+            <label for="github">En Github</label>
+            <input type="radio" name="where" id="github" value="github" />
+          </div>
+        </div>
+        <!-- Texarea -->
+        <div>
+          <label for="more-info">Más información</label>
+          <textarea name="more-info" id="more-info" maxlength="256" placeholder="Que más quieres saber..."
+            required></textarea>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <input type="checkbox" name="news" id="news" checked />
+          <label for="news">Subscribite a mi Newsletter</label>
+        </div>
+        <!-- Botones -->
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <!-- Footer -->
