@@ -39,7 +39,7 @@
         <li class="nav__list"><a href="#about">Sobre mí</a></li>
         <li class="nav__list"><a href="#skills">Skills</a></li>
         <li class="nav__list"><a href="portfolio.html" target="_blank">Portfolio</a></li>
-        <li class="nav__list nav__list-last"><a href="#contact">Contacto</a></li>
+        <li class="nav__list nav__list-last"><a href="#form">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -122,70 +122,81 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="form">
+    <section class="form" id="form">
       <div class="form__image"></div>
-      <h2 class="form__title">Contacto</h2>
-      <!-- Form -->
-      <form action="/" method="post" class="form__container">
-        <!-- Nombre -->
-        <div class="form__element">
-          <label class="form__label"="name">Nombre</label>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Nombre" required />
-        </div>
-        <!-- Apellido -->
-        <div class="form__element">
-          <label class="form__label"="apellido">Apellido</label>
-          <input class="form__input" type="text" name="apellido" id="apellido" placeholder="Apellido" required />
-        </div>
-        <!-- Teléfono -->
-        <div class="form__element">
-          <label class="form__label"="phone">Teléfono</label>
-          <input class="form__input" type="tel" name="phone" id="phone" min="0" pattern="[0-9]{9}"
-            placeholder="Teléfono (666123123)" required />
-        </div>
-        <!-- Github -->
-        <div class="form__element">
-          <label class="form__label"="github">Tag Github</label>
-          <input class="form__input" type="text" name="github" id="github" pattern="^@[^/s]"
-            placeholder="@<username>" />
-        </div>
-        <!-- Donde me conocistes -->
-        <div class="form__element">
-          <label class="form__label">¿Dónde me conociste?</label>
-          <div class="">
-            <label class="form__label"="university">Universidad</label>
-            <input class="form__input" type="radio" name="where" id="university" value="universidad" required checked />
+      <div class="contact__container">
+        <h2 class="form__title">Contacto</h2>
+        <!-- Form -->
+        <form action="/" method="post" class="form__container">
+
+          <!-- Nombre -->
+          <div class="form__element">
+            <label class="form__label"="name">Nombre</label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Nombre" required />
           </div>
-          <div class="">
-            <label class="form__label"="keepcoding">Keepcoding kick-off</label>
-            <input class="form__input" type="radio" name="where" id="keepcoding" value="keepcoding" required />
+
+          <!-- Apellido -->
+          <div class="form__element">
+            <label class="form__label"="apellido">Apellido</label>
+            <input class="form__input" type="text" name="apellido" id="apellido" placeholder="Apellido" required />
           </div>
-          <div class="">
-            <label class="form__label"="schooll">Colegio</label>
-            <input class="form__input" type="radio" name="where" id="school" value="school" required />
+
+          <!-- Teléfono -->
+          <div class="form__element">
+            <label class="form__label"="phone">Teléfono</label>
+            <input class="form__input" type="tel" name="phone" id="phone" min="0" pattern="[0-9]{9}"
+              placeholder="666123123" required />
           </div>
-          <div class="">
-            <label class="form__label"="github">En Github</label>
-            <input class="form__input" type="radio" name="where" id="github" value="github" />
+
+          <!-- Github -->
+          <div class="form__element">
+            <label class="form__label"="github">Tag Github</label>
+            <input class="form__input" type="text" name="github" id="github" pattern="^@[^/s]"
+              placeholder="@<username>" />
           </div>
-        </div>
-        <!-- Textarea -->
-        <div class="form__element">
-          <label class="form__label"="more-info">Más información</label>
-          <textarea name="more-info" id="more-info" maxlength="256" placeholder="Que más quieres saber..." required
-            cols="30" rows="10"></textarea>
-        </div>
-        <!-- Newsletter -->
-        <div class="form__element form__element--checkbox">
-          <input type="checkbox" name="news" id="news" checked />
-          <label class="form__label" for="news">Subscribite a mi Newsletter</label>
-        </div>
-        <!-- Botones -->
-        <div>
-          <button type="reset">Reset</button>
-          <button type="submit" class="btn">Enviar</button>
-        </div>
-      </form>
+
+          <!-- Donde me conocistes -->
+          <div class="form__element">
+            <label class="form__label">¿Dónde me conociste?</label>
+            <div class="">
+              <label class="form__label"="university">Universidad</label>
+              <input class="form__input" type="radio" name="where" id="university" value="universidad" required
+                checked />
+            </div>
+            <div class="">
+              <label class="form__label"="keepcoding">Keepcoding kick-off</label>
+              <input class="form__input" type="radio" name="where" id="keepcoding" value="keepcoding" required />
+            </div>
+            <div class="">
+              <label class="form__label"="schooll">Colegio</label>
+              <input class="form__input" type="radio" name="where" id="school" value="school" required />
+            </div>
+            <div class="">
+              <label class="form__label"="github">En Github</label>
+              <input class="form__input" type="radio" name="where" id="github" value="github" />
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form__element">
+            <label class="form__label"="more-info">Más información</label>
+            <textarea name="more-info" id="more-info" maxlength="256" placeholder="Que más quieres saber..." required
+              cols="30" rows="10"></textarea>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="form__element form__element--checkbox">
+            <input type="checkbox" name="news" id="news" checked />
+            <label class="form__label" for="news">Suscríbete a mi Newsletter</label>
+          </div>
+
+          <!-- Botones -->
+          <div class="form__btn">
+            <button class="btn btn--secondary" type="reset">Reset</button>
+            <button class="btn btn-secondary" type="submit" class="btn">Enviar</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
