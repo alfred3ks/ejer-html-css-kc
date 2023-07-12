@@ -45,6 +45,7 @@
   text-decoration: none;
   background-color: var(--primary-color);
   color: var(--text-color);
+  transition: background-color 2s ease;
 }
 
 /* Media queries */
@@ -68,5 +69,10 @@
 
   .portfolio__button {
     font-size: 2.2rem;
+  }
+
+  .portfolio__button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
   }
 }

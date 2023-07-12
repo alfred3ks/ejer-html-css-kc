@@ -85,13 +85,15 @@ input::placeholder {
 .btn {
   color: var(--primary-color);
   background-color: var(--text-color);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  transition: background-color 1s ease;
 }
 
 .btn.btn--secondary {
-  color: var(--text-color);
+  color: var(--background-color);
   background-color: var(--secondary-color);
   border-color: none;
 }
@@ -117,5 +119,15 @@ input::placeholder {
 
   .form__title {
     font-size: 2.2rem;
+  }
+
+  .btn:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+
+  .btn.btn--secondary:hover {
+    color: var(--primary-color);
+    background-color: var(--text-color);
   }
 }

@@ -59,7 +59,7 @@
   background-color: #ff8000;
   margin-left: 2px;
   border-radius: 30px;
-  animation: fillhtml 2s forwards ease;
+  animation: fillhtml 3s forwards ease;
 }
 
 .skills__outside-css {
@@ -77,7 +77,7 @@
   background-color: #0833a2;
   margin-left: 2px;
   border-radius: 30px;
-  animation: fillcss 2s forwards ease;
+  animation: fillcss 3s forwards ease;
 }
 
 .skills__outside-js {
@@ -95,7 +95,7 @@
   background-color: #ffff00;
   margin-left: 2px;
   border-radius: 30px;
-  animation: filljs 2s forwards ease;
+  animation: filljs 3s forwards ease;
 }
 
 .skills__outside-rjs {
@@ -113,7 +113,7 @@
   background-color: #61dbfb;
   margin-left: 2px;
   border-radius: 30px;
-  animation: fillreact 2s forwards ease;
+  animation: fillreact 3s forwards ease;
 }
 
 .skills__percentage {
