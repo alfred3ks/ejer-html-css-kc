@@ -3,6 +3,7 @@
   width: 100%;
   min-width: 300px;
   padding: 0 15px 20px 15px;
+  padding: 20px 25px;
   background-color: var(--primary-color);
 }
 
@@ -30,6 +31,7 @@
 .project__title {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -44,11 +46,10 @@
 }
 
 .card__description {
-  width: 170px;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   color: white;
 }
 

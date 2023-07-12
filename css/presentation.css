@@ -7,7 +7,7 @@
   padding: 20px 20px 40px 20px;
 }
 
-.presentation .presentation__background {
+.presentation__background {
   width: 100%;
   position: absolute;
   top: 0;
@@ -20,10 +20,9 @@
   background-position: center;
   background-size: cover;
   filter: brightness(25%);
-  /* opacity: 0.6; */
 }
 
-.presentation .presentation__content {
+.presentation__content {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -32,12 +31,12 @@
   justify-content: center;
 }
 
-.presentation__content .presentation__img {
+.presentation__img {
   max-width: 230px;
   padding: 10px;
 }
 
-.presentation__content .presentation__img img {
+.presentation__img img {
   width: 100%;
   border-radius: 50%;
   outline: solid 1px var(--secondary-color);
@@ -47,13 +46,13 @@
   width: 70%;
 }
 
-.presentation .presentation__text h1 {
+.presentation__text h1 {
   margin: 10px 0;
   color: var(--text-color);
   font-size: 2rem;
 }
 
-.presentation .presentation__text p {
+.presentation__text p {
   color: var(--text-color);
   font-size: 1.6rem;
 }
@@ -65,30 +64,30 @@
     margin: 0 auto;
   }
 
-  .presentation .presentation__background {
+  .presentation__background {
     background-image: url(../assets/img/fondo-desktop.jpg);
   }
 
-  .presentation .presentation__content {
+  .presentation__content {
     width: 60%;
     padding: 10px 0;
   }
 
-  .presentation__content .presentation__img {
+  .presentation__img {
     max-width: 300px;
   }
 
-  .presentation .presentation__content h1 {
+  .presentation__content h1 {
     font-size: 2.4rem;
   }
 
-  .presentation .presentation__content p {
+  .presentation__content p {
     font-size: 2rem;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .presentation .presentation__content {
+  .presentation__content {
     flex-direction: row;
   }
   .presentation__text {
