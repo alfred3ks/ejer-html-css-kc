@@ -3,7 +3,7 @@
 
 ![Portfolio John Doe](/assets/img/captura-web.jpg)
 
-Este es un proyecto creado usando [HTML](https://developer.mozilla.org/es/docs/Web/HTML) y [CSS](https://developer.mozilla.org/es/docs/Web/CSS). A lo largo del proyecto se ha puesto en práctica los conocimientos adquiridos durante la formacion del módulo.
+Este es un proyecto creado usando [html](https://developer.mozilla.org/es/docs/Web/HTML) y [css3](https://developer.mozilla.org/es/docs/Web/CSS). A lo largo del proyecto se ha puesto en práctica los conocimientos adquiridos durante la formación del módulo.
 
 El proyecto tiene la siguiente estructura de :file_folder::.
 

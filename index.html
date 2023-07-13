@@ -152,70 +152,74 @@
     <!-- Contact Form -->
     <section class="form" id="form">
       <div class="form__image"></div>
-      <div class="contact__container">
+      <div class="form__contact">
         <h2 class="form__title">Contacto</h2>
         <!-- Form -->
         <form action="index.html" method="post" class="form__container">
 
           <!-- Nombre -->
           <div class="form__element">
-            <label class="form__label"="name">Nombre</label>
+            <label class="form__label"="name">Nombre *</label>
             <input class="form__input" type="text" name="name" id="name" placeholder="Nombre" required />
           </div>
 
           <!-- Apellido -->
           <div class="form__element">
-            <label class="form__label"="apellido">Apellido</label>
+            <label class="form__label"="apellido">Apellido *</label>
             <input class="form__input" type="text" name="apellido" id="lastname" placeholder="Apellido" required />
           </div>
 
           <!-- Teléfono -->
           <div class="form__element">
-            <label class="form__label"="phone">Teléfono</label>
+            <label class="form__label"="phone">Teléfono *</label>
             <input class="form__input" type="tel" name="phone" id="phone" min="0" pattern="[0-9]{9}"
               placeholder="666123123" required />
           </div>
 
           <!-- Github -->
           <div class="form__element">
-            <label class="form__label"="github">Tag Github</label>
+            <label class="form__label"="github">Tag Github *</label>
             <input class="form__input" type="text" name="github" id="github" pattern="^@[^/s]" placeholder="@<username>"
               required />
           </div>
 
           <!-- Donde me conocistes -->
-          <div class="form__element">
-            <label class="form__label">¿Dónde me conociste?</label>
+          <div class="form__element radio-button">
+            <label class="form__label">¿Dónde me conociste? *</label>
             <div class="">
-              <label class="form__label"="university">Universidad</label>
               <input class="form__input" type="radio" name="where" id="university" value="universidad" required
                 checked />
+              <label class="form__label"="university">Universidad</label>
             </div>
             <div class="">
-              <label class="form__label"="keepcoding">Keepcoding kick-off</label>
               <input class="form__input" type="radio" name="where" id="keepcoding" value="keepcoding" required />
+              <label class="form__label"="keepcoding">Keepcoding kick-off</label>
             </div>
             <div class="">
-              <label class="form__label"="schooll">Colegio</label>
               <input class="form__input" type="radio" name="where" id="school" value="school" required />
+              <label class="form__label"="schooll">Colegio</label>
             </div>
             <div class="">
-              <label class="form__label"="github">En Github</label>
               <input class="form__input" type="radio" name="where" id="github" value="github" />
+              <label class="form__label"="github">En Github</label>
             </div>
           </div>
 
           <!-- Textarea -->
-          <div class="form__element">
-            <label class="form__label"="more-info">Más información</label>
+          <div class="form__element text-area">
+            <label class="form__label"="more-info">Más información *</label>
             <textarea name="more-info" id="more-info" maxlength="256" placeholder="Que más quieres saber..." required
               cols="30" rows="10"></textarea>
           </div>
 
           <!-- Newsletter -->
-          <div class="form__element form__element--checkbox">
-            <input type="checkbox" name="news" id="news" checked required />
+          <div class="form__element form__element--checkbox newsletter">
+            <input type="checkbox" name="news" id="news" />
             <label class="form__label" for="news">Suscríbete a mi Newsletter</label>
+          </div>
+
+          <div class="form__text">
+            <p>Todos los elementos con * son requeridos</p>
           </div>
 
           <!-- Botones -->

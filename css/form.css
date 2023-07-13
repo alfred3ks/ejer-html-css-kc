@@ -22,7 +22,7 @@
   background-color: var(--primary-color);
 }
 
-.contact__container {
+.form__contact {
   width: 100%;
 }
 
@@ -42,6 +42,7 @@
 .form__label {
   font-size: 1.6rem;
   color: var(--text-color);
+  margin-left: 5px;
 }
 
 .form__input {
@@ -76,8 +77,14 @@ input::placeholder {
   color: var(--background-color);
 }
 
+.form__text {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
 .form__btn {
   margin-top: 25px;
+  margin-top: 15px;
   display: flex;
   gap: 10px;
 }
@@ -100,9 +107,22 @@ input::placeholder {
 
 /* Media queries */
 @media screen and (width>= 768px) {
-  .contact__container {
+  .form__contact {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+
+  .radio-button,
+  .text-area,
+  .newsletter,
+  .form__text {
+    grid-column: 1 / 3;
   }
 }
 
@@ -113,7 +133,7 @@ input::placeholder {
     padding: 50px 0;
   }
 
-  .contact__container {
+  .form__contact {
     width: 80%;
   }
 
