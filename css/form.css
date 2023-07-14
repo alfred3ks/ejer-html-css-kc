@@ -124,6 +124,11 @@ input::placeholder {
   .form__text {
     grid-column: 1 / 3;
   }
+
+  .form__element-radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (width>= 1024px) {
