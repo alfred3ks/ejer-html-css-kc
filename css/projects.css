@@ -26,6 +26,7 @@
   padding: 10px;
   margin-bottom: 10px;
   border: 2px solid var(--secondary-color);
+  border-radius: 3px;
 }
 
 .project__title {
@@ -80,7 +81,7 @@
   .projects__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
   }
 
   .project__card {
